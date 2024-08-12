@@ -1,0 +1,76 @@
+.register {
+  background-image: url('https://st.depositphotos.com/1447017/2412/i/450/depositphotos_24121951-stock-photo-spring-or-summer-heat-abstract.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.login {
+  background-image: url('https://as1.ftcdn.net/jpg/02/80/28/12/220_F_280281281_4oRYaWxHGoRIKwxF9HnofBIJa0kgm0Cg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh; /* Ensures the main area covers the full viewport */
+  background: linear-gradient(180deg, #0b0b0b, #454646);
+}
+
+.back {
+  background: linear-gradient(180deg, #031b0a, #ebefec);
+  min-height: 100vh; /* Ensures the background area covers the full viewport */
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  background: linear-gradient(90deg, rgb(115, 175, 115), rgba(7, 231, 104, 0.472));
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.tabs {
+  margin-bottom: 20px;
+}
+
+/* Adjust tabs to be more responsive */
+.tabs button {
+  margin: 0 5px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background: #0b0b0b;
+  color: #fff;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.tabs button:hover, .tabs button.active {
+  background: #454646;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cards-container {
+    justify-content: center;
+  }
+
+  .card {
+    width: 90%;
+    margin: 10px 0;
+  }
+}
